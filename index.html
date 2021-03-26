@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/52f07981aa.js" crossorigin="anonymous"></script>
+    <title>SwiftDive</title>
+</head>
+<body>
+
+<header>
+  <!-- Loader -->
+  <div class="loader hidden">
+    <img src="images/rose.svg" alt="rose loader">
+  </div>
+  <!-- Dark Mode Toggle -->
+  <div class="theme-switch-wrapper">
+    <span id="toggle-icon">
+      <span class="toggle-text">Light Mode</span>
+      <i class="fas fa-sun"></i>
+    </span>
+    <label class="theme-switch">
+      <input type="checkbox">
+      <div class="slider round"></div>
+    </label>
+  </div>
+</header>
+
+<main>
+  <section>
+    <!-- Heading -->
+    <h1 class="main-heading">SwiftDive</h1>
+    <!-- Artist Container -->
+    <div class="artist-container"></div>
+  </section>
+
+  <section id="similar">
+    <!-- Similar Artist Container -->
+    <h2 class="similar-heading">Similar Artists</h2>
+    <div class="similar-artist-container">
+      <div class="similar-artist-grid"></div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <p>&#169; 2021. SwiftDive by Anthony Gonzales</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

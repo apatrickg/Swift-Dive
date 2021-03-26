@@ -47,6 +47,7 @@ function createIframe(div, iframe, user){
     iframe.src = `https://www.youtube-nocookie.com/embed/${user.yID}`;
     iframe.width = '100%';
     iframe.height = '100%';
+    iframe.loading = "lazy";
 
     div.appendChild(iframe);
 }
@@ -124,8 +125,8 @@ function switchTheme(event){
 // Toggle Dark/Light
 function toggleDarkLightMode(isDark){
     toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
-    isDark ? toggleIcon.children[1].classList.replace('fa-sun','fa-moon') :
-    toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
+    isDark ? toggleIcon.children[1].classList.replace('sun','moon') :
+    toggleIcon.children[1].classList.replace('moon', 'sun');
 }
 
 
@@ -143,4 +144,4 @@ if (currentTheme){
 getArtistData();
 
 // Event Listeners
-toggleSwitch.addEventListener('change', switchTheme);
+toggleSwitch.addEventListener('change', switchTheme, {passive: true} );

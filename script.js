@@ -11,7 +11,7 @@ const proxy = 'https://peaceful-fjord-61207.herokuapp.com/';
 
 // TastDive API
 const apiKey = '406230-SwiftieL-J6OCQIAQ';
-const apiURL = `${proxy}https://tastedive.com/api/similar?limit=18&info=1&q=Taylor Swift&k=${apiKey}`;
+const apiURL = `${proxy}https://tastedive.com/api/similar?limit=9&info=1&q=Taylor Swift&k=${apiKey}`;
 
 
 // Hold results from similar artists
